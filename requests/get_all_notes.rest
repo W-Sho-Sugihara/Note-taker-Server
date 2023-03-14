@@ -1,0 +1,2 @@
+GET HTTP://localhost:3002/api/notes
+
