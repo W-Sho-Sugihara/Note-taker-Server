@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 app.use(express.json());
 const cors = require("cors");
-const { response } = require("express");
+// const { response } = require("express");
 app.use(cors());
 app.use(express.static("build"));
 
@@ -86,6 +86,5 @@ app.delete("/api/notes/:id", (request, response) => {
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
   console.log(`Server running on port ${PORT}`);
 });
